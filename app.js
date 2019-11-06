@@ -1,19 +1,23 @@
 var weightInput = document.querySelector("input");
 var weightSubmit = document.querySelector("button");
+var h2 = document.querySelector("h2");
+var result = document.querySelector(".result");
 var weight = 0;
 
 weightSubmit.addEventListener("click", function (e){
     e.preventDefault();
     var newWeight = spaceWeights("Earth", weightInput.value, "Jupiter");
     console.log(newWeight);
+    h2.textContent = "You weigh " + newWeight + " pounds on Jupiter";
+    toggleHide(h2);
 });
 
-weightInput.addEventListener("keypress", function (e){
-    if (e.key === 'Enter'){
-        var newWeight = spaceWeights("Earth", weightInput.value, "Jupiter");
-        console.log(newWeight);
-    }  
-});
+// weightInput.addEventListener("keypress", function (e){
+//     if (e.key === 'Enter'){
+//         var newWeight = spaceWeights("Earth", weightInput.value, "Jupiter");
+//         console.log(newWeight);
+//     }  
+// });
 
 
 
@@ -31,4 +35,8 @@ function spaceWeights(planetA, weight, planetB) {
   }
   var weight = (weight/planetGravs[planetA]) * planetGravs[planetB];
   return Number(weight.toFixed(2));
+}
+
+function toggleHide(el){
+    el.classList.remove("hide");
 }
