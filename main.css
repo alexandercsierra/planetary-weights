@@ -1,0 +1,46 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    border: 1px solid red;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 2.5rem;
+    background: rgb(2,0,36);
+    background: linear-gradient(45deg, rgba(2,0,36,1) 0%, rgba(62,99,110,1) 55%, rgba(54,141,158,1) 100%);
+}
+
+.container {
+    width: 80%;
+    margin: 2% auto;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: rgba(60, 70, 77, .5);
+    color: white;
+    border-radius: 4%;
+}
+
+h1 {
+    width: 50%;
+    padding: 4%;
+    
+}
+
+h2 {
+    width: 50%;
+    margin: 0;
+    padding: 4%;
+}
+
+form {
+    padding: 4%;
+}
