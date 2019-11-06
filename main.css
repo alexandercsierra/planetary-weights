@@ -97,7 +97,8 @@ button {
 
 .stars {
     background-image: url("images/star1cropped.jpg");
-    /* background-position: center; */
-    background-size: 100%;
+    background-position: cover;
+    background-size: 1920px 1080px;
+    background-attachment: fixed;
 }
 
