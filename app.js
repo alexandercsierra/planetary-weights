@@ -17,32 +17,32 @@ weightSubmit.addEventListener("click", function (e){
     //change background according to planet choice
 
     if (planetChoice === "Mercury"){
-        body.style.backgroundImage = "url('images/mercury.jpg')";
+        body.style.background = "#000000 url('images/mercury.jpg')";
         body.style.backgroundPosition = "cover";
         body.style.backgroundSize = "1920px 1080px";
     }
     if (planetChoice === "Venus"){
-        body.style.backgroundImage = "url('images/venus.jpg')";
+        body.style.background = "#000000 url('images/venus.jpg')";
         body.style.backgroundPosition = "cover";
         body.style.backgroundSize = "1920px 1080px";
     }
     if (planetChoice === "Earth"){
-        body.style.backgroundImage = "url('images/earth1.jpg')";
+        body.style.background = "#000000 url('images/earth1.jpg')";
         body.style.backgroundPosition = "cover";
         body.style.backgroundSize = "1920px 1080px";
     }
     if (planetChoice === "Mars"){
-        body.style.backgroundImage = "url('images/mars.jpg')";
+        body.style.background = "#000000 url('images/mars.jpg')";
         body.style.backgroundPosition = "cover";
         body.style.backgroundSize = "1920px 1080px";
     }
     if (planetChoice === "Jupiter"){
-        body.style.backgroundImage = "url('images/jupiter.jpg')";
+        body.style.background = "#000000 url('images/jupiter.jpg')";
         body.style.backgroundPosition = "cover";
         body.style.backgroundSize = "1920px 1080px";
     }
     if (planetChoice === "Saturn"){
-        body.style.backgroundImage = "url('images/saturn.jpg')";
+        body.style.background = "#000000 url('images/saturn.jpg')";
         body.style.backgroundPosition = "cover";
         body.style.backgroundSize = "1920px 1080px";
     }
@@ -54,14 +54,15 @@ weightSubmit.addEventListener("click", function (e){
         body.style.backgroundRepeat = "no-repeat";
     }
     if (planetChoice === "Neptune"){
-        body.style.backgroundImage = "url('images/neptune.jpg')";
+        body.style.background = "#000000 url('images/neptune.jpg')";
         body.style.backgroundPosition = "cover";
         body.style.backgroundSize = "1920px 1080px";
     }
     if (planetChoice === "Pluto"){
-        body.style.backgroundImage = "url('images/pluto.jpg')";
+        body.style.background = "#000000 url('images/pluto.jpg')";
         body.style.backgroundPosition = "cover";
-        body.style.backgroundSize = "1920px 1080px";
+        body.style.backgroundSize = "100%";
+        body.style.backgroundRepeat = "no-repeat";
     }
 });
 
