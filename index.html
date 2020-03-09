@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta property="og:image" content="/planets/images/earth1.jpg">
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    <title>Planetary Weights</title>
+</head>
+<body class="stars">
+    <div class="container">
+        <h1>Planetary Weights</h1>
+        <form>
+            <input type="text" placeholder="Enter your Earth weight">
+            <select name="planets" class="planets">
+                <option value="Mercury">Mercury</option>
+                <option value="Venus">Venus</option>
+                <option value="Earth">Earth</option>
+                <option value="Mars">Mars</option>
+                <option value="Jupiter">Jupiter</option>
+                <option value="Saturn">Saturn</option>
+                <option value="Uranus">Uranus</option>
+                <option value="Neptune">Neptune</option>
+                <option value="Pluto">Pluto</option>
+            </select>
+            <select name="weight" class="units">
+                <option value="pounds">lbs</option>
+                <option value="kilos">kgs</option>
+            </select>
+            
+            <button type="submit">SUBMIT</button>
+        </form>
+        <div class="result">
+            <h2></h2> 
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
